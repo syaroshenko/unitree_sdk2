@@ -35,6 +35,7 @@ public:
     ~SportClient();
 
     void Init();
+    
     int32_t Damp();
     
     int32_t BalanceStand();
@@ -75,8 +76,12 @@ public:
 
     int32_t FastWalk(bool flag);
 
-    int32_t FreeEuler(bool flag);
+    int32_t Euler(float roll, float pitch, float yaw);
     
+    int32_t FreeHeight(bool flag);
+    
+    int32_t GaitHeight(bool flag);
+
 };
 }
 }
